@@ -2,23 +2,28 @@ import { Link } from "react-router-dom"
 
 function Home() {
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center p-6">
+    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
 
       <div className="max-w-5xl">
 
-        <h1 className="text-3xl font-bold text-center mb-2">
+        <h1 className="text-4xl font-bold text-center mb-2 p-5">
 
-            Customer Relationship Management System
+            Hello there
         </h1>
 
-        <p className="text-gray-500 text-center mb-10">
+        <h2 className="text-2xl font-bold text-center mb-2">
+
+
+            Customer Relationship Management System
+        </h2>
+
+        <p className="text-gray-500 text-center mb-5">
           Manage customers and business relationships
         </p>
 
-
           {/* View Customers */}
 
-          <div className="bg-white p-10 rounded-lg shadow hover:shadow-md transition text-center">
+          <div className="text-center">
             <h2 className="text-lg font-semibold mb-2">
               Customers
             </h2>
@@ -29,10 +34,18 @@ function Home() {
 
             <Link
               to="/dashboard"
-              className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+              className="bg-blue-500 text-white m-2 px-8 py-2 rounded hover:bg-blue-600"
             >
               View
             </Link>
+
+             <Link
+              to="/about"
+              className=" bg-blue-500 text-white m-2 px-8 py-2 rounded hover:bg-blue-600"
+            >
+              About
+            </Link>
+
           </div>
 
         
